@@ -24,6 +24,12 @@ const userSchema = new mongoose.Schema({
     },
     avater:{
         type : String,
-        default: "",
+        default: "https://ibb.co/1Zdrjjs",
     }
+}, 
+{
+    timestamps : true,
 })
+
+let Dataset = mongoose.models.user || mongoose.model("user", userSchema)
+export default Dataset;

@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+ env : {
+  "BASE_URL" : "",
+  "MONGODB_URL" : "mongodb+srv://shopping_hut_admin:jifR2KbRo5T8az1r@cluster0.hx8udxs.mongodb.net/?retryWrites=true&w=majority"
+ }
 }
 
 module.exports = nextConfig
