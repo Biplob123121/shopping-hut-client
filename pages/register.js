@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import valid from '../utils/valid';
 
 function Register() {
   const initialState = {name : "", email: "", password: "", cf_password: ""};
@@ -14,7 +15,10 @@ function Register() {
 
   const handleSubmit = e =>{
     e.preventDefault();
-    console.log(userData);
+    const errMsg = valid(name, email, password, cf_password)
+    if(errMsg){
+      console.log(errMsg);
+    }
   }
 
   return (
