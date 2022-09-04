@@ -11,7 +11,7 @@ const reducers = (state, action) =>{
             return{
                 ...state,
                 auth : action.payload
-            }
+            };
         default :
          return state
     }
