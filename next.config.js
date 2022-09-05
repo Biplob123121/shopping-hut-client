@@ -2,8 +2,15 @@
 const nextConfig = {
  env : {
   "BASE_URL" : "http://localhost:3000",
-  "MONGODB_URL" : "mongodb+srv://shopping_hut_admin:jifR2KbRo5T8az1r@cluster0.hx8udxs.mongodb.net/?retryWrites=true&w=majority"
+  "MONGODB_URL" : "mongodb+srv://shopping_hut_admin:jifR2KbRo5T8az1r@cluster0.hx8udxs.mongodb.net/shopping-hut"
  }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
+
+
+
+// we need to use database name after .net
+// .net/shopping-hut
+
+// ?retryWrites=true&w=majority
