@@ -24,3 +24,7 @@ a {
     background: black;
   }
 }
+
+/* css for loding page */
+
+@import url('./loading.css');
